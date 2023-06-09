@@ -2,7 +2,7 @@
 
 Our inspiration for Rainsurance came from recognizing a common issue faced by many vacationers. People often save up and wait months to take their dream vacations, investing significant amounts of money and time planning their trips. However, unexpected bad weather can mar the experience. We saw a need for a solution that would provide peace of mind to tourists in case of adverse weather conditions, allowing them to fully enjoy their vacations.
 
-We are passionate about decentralized technologies and we want to promote the crypto revolution. The intersection of smart contracts and insurance presented an incredible opportunity to onboard many people about the benefits of blockchain technology. 
+We are passionate about decentralized technologies and we want to promote the crypto revolution. With that in mind we see the intersection of smart contracts and insurance as an incredible opportunity to onboard many more new people about the benefits of blockchain technology. 
 
 A major issue for insurance customers is the claim process. We are confident that through the use of Blockchain and Oracles like Chainlink, we can provide automation, transparency and fast response time and thus address this issue at its root. In doing so, we believe we can add a lot of value to the travel and events industries around the world.
 
@@ -12,11 +12,13 @@ Rainsurance leverages Chainlink functions, the Etherisc GIF framework, and the M
 
 ## How we built it
 
-<img src="[https://github.com/Liquidity-Wars/.github/blob/main/profile/imgs/RewardsRatioAndEarnings.png](https://github.com/Rainsurance/.github/blob/master/profile/imgs/technical-diagram.jpg)" alt="technical-diagram" width="800" height="450"/>
+<img src="https://github.com/Rainsurance/.github/blob/master/profile/imgs/technical-diagram.jpg" alt="technical-diagram"/>
 
-We used Etherisc's GIF framework - Brownie.
-We used Chainlink Functions starter kit - Hardhat.
-We built our frontend from scratch using Next.js/React.
+We used Etherisc's [GIF framework] (https://github.com/etherisc) - Brownie.
+
+We used Chainlink's [Functions starter kit] (https://github.com/smartcontractkit/functions-hardhat-starter-kit) - Hardhat.
+
+Frontend: Next.js/React.
 
 ## Challenges we ran into
 
@@ -37,18 +39,6 @@ With regard to the weather data, it took us some time to fully understand the co
 
 Finally, product-wise, one of the biggest challenges we faced was finding the right balance between the needs of our potential customers and the insurance companies that might want to participate in our platform. Understanding the dynamics of the insurance market, the risk factors involved, and the expectations of the customers was a complex task.
 
-## Accomplishments that we're proud of
-
-We are proud to have created a solution that addresses a real-world problem and has the potential to disrupt the travel industry, all using blockchain and web3. We successfully built the project leveraging robust technologies/frameworks/partners, thus after some validation during the MVP phase, we are confident that we have a production-ready solution at hand.
-On top of that we managed to overcome all the technical challenges described in the previous section, which made us very happy and proud.
-
-## What we learned
-
-First of all, we have learned a lot about the insurance market and the techinalities behind weather forecasting.
-We now have an intermediate to advanced level of knowledge about Etherisc's GIF which can be leveraged for this insurance proposed here or any other type of decentralized insurance we might be working in the future.
-We also had the opportunity to learn in practice the recently launched Chainlink service - Chainlink Functions.
-The intersection of smart contracts and insurance presented an incredible opportunity to onboard many people about the benefits of blockchain technology and the use of oracles. A pain point for insurance customers is the claim process, and we are confident that the benefits of oracles like Chainlink will open up a lot of new use cases. We also aim to deliver more value to the travel industry and event organizers around the world. 
-
 ## What's next for Rainsurance
 We plan to continue improving and expanding our service through an extensive roadmap, some of the key milestones being:
 - Onboard more regular travelers (not only web3 users) by enabling other payment methods like credit cards and PIX for the brazilian market;
@@ -56,4 +46,24 @@ We plan to continue improving and expanding our service through an extensive roa
 - Develop a Landing Page for explaing in details our offering and advantages for potencial customers;
 - Establish partnerships with online agencies and booking services to enable a streamlined, one-click type of solution, for enrolling new customer into our rain insurance;
 
-Don't let the rain ruin your vacation or events! Rainsurance has got you covered. We believe that these developments will take Rainsurance to new heights.
+## Contracts, repositores and project structure
+
+### GIF instance
+
+Address: [0xc74170ad97c9eF3AdA552427Ea3163500D484961](https://mumbai.polygonscan.com/address/0xc74170ad97c9eF3AdA552427Ea3163500D484961)
+
+### GIF Product (RainProduct)
+This is our main contract where all logic behind our produto (rain insurance) is implemented, including the payout calculation.
+
+Address: [0xab7DA5B6D9EB2DCA7f04c4DE9b9FeCD1e70fdA05](https://mumbai.polygonscan.com/address/0xab7DA5B6D9EB2DCA7f04c4DE9b9FeCD1e70fdA05#code)
+
+### GIF Oracle (RainOracleCLFunctions)
+This is the Chainlink Functions consumer contract and the Chainlink Keeper target.
+
+Address: [0x0963e107D43b2452c825eaa02743083dcc723045](https://mumbai.polygonscan.com/address/0x0963e107D43b2452c825eaa02743083dcc723045#code)
+
+### GIF RiskPool (RainRiskpool)
+Here is where all logic behind the Riskpool is implemented. This is 
+
+Address: [0x3D5cB3c62b17f3C37AdaDbf207A69018C65B6086](https://mumbai.polygonscan.com/address/0x3D5cB3c62b17f3C37AdaDbf207A69018C65B6086#code)
+
