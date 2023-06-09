@@ -14,9 +14,9 @@ Rainsurance leverages Chainlink functions, the Etherisc GIF framework, and the M
 
 <img src="https://github.com/Rainsurance/.github/blob/master/profile/imgs/technical-diagram.jpg" alt="technical-diagram"/>
 
-We used Etherisc's [GIF framework] (https://github.com/etherisc) - Brownie.
+We used Etherisc's [GIF framework](https://github.com/etherisc) - Brownie.
 
-We used Chainlink's [Functions starter kit] (https://github.com/smartcontractkit/functions-hardhat-starter-kit) - Hardhat.
+We used Chainlink's [Functions starter kit](https://github.com/smartcontractkit/functions-hardhat-starter-kit) - Hardhat.
 
 Frontend: Next.js/React.
 
@@ -46,9 +46,10 @@ We plan to continue improving and expanding our service through an extensive roa
 - Develop a Landing Page for explaing in details our offering and advantages for potencial customers;
 - Establish partnerships with online agencies and booking services to enable a streamlined, one-click type of solution, for enrolling new customer into our rain insurance;
 
-## Contracts, repositores and project structure
+## Contracts
 
 ### GIF instance
+This is GIF execution environment that provide all the lifecycle of an insurance policy, thus enabling an automated workflow that controls the sequence of processing steps.
 
 Address: [0xc74170ad97c9eF3AdA552427Ea3163500D484961](https://mumbai.polygonscan.com/address/0xc74170ad97c9eF3AdA552427Ea3163500D484961)
 
@@ -67,3 +68,28 @@ Here is where all logic behind the Riskpool is implemented. This is
 
 Address: [0x3D5cB3c62b17f3C37AdaDbf207A69018C65B6086](https://mumbai.polygonscan.com/address/0x3D5cB3c62b17f3C37AdaDbf207A69018C65B6086#code)
 
+## Repositores and project structure
+
+There are two main repositories:
+
+- Frontend: [https://github.com/Rainsurance/rainsurance-frontend](https://github.com/Rainsurance/rainsurance-frontend)
+
+- Contracts: [https://github.com/Rainsurance/rainsurance-contracts](https://github.com/Rainsurance/rainsurance-contracts)
+
+Given the lack of compatibility test-wise between Hardhat and Brownie, a third repository was necessary to target specifically the CL Functions-based Oracle contract. This is simply a fork from the [oficial repository](https://github.com/smartcontractkit/functions-hardhat-starter-kit) that enables the deployment of the GIF Oracle.
+
+- https://github.com/Rainsurance/functions-hardhat-starter-kit
+
+You will find specific installation instructions in each repository. 
+
+## References
+
+[Walkthrough Manual For Chainlink Functions Deep Dive](https://docs.google.com/document/d/e/2PACX-1vQh2ZN_K6QpIK1ebt8BjSAwdMZCBgZXSxPYTTaI7dufvM8k2odO9bHpbYlgT6GIobGCfDbIv9c_4czs/pub?utm_campaign=Functions%20Masterclass%20%231&utm_medium=email&_hsmi=259057417&_hsenc=p2ANqtz-8bgQ4dkEwE9CS3RlAPi5aPTwa-qNcfVx5fWJHTbd1F83yMWkZmIETe_RSO4XspWphe3kClaMfoFGHRtnqkaS1jpBjelw&utm_content=259057417&utm_source=hs_email)
+
+[Basics about the GIF framework](https://docs.etherisc.com/learn/basics-gif)
+
+[Metoblue technical documentation](https://docs.meteoblue.com/en/weather-apis/introduction/overview)
+
+[Chainlink's oficial Functions documentation](https://docs.chain.link/chainlink-functions)
+
+[Chainlink's oficial Automation/Keepers documentation](https://docs.chain.link/chainlink-automation/introduction)
