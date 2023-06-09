@@ -64,7 +64,7 @@ This is the Chainlink Functions consumer contract and the Chainlink Keeper targe
 Address: [0x0963e107D43b2452c825eaa02743083dcc723045](https://mumbai.polygonscan.com/address/0x0963e107D43b2452c825eaa02743083dcc723045#code)
 
 ### GIF RiskPool (RainRiskpool)
-Here is where all logic behind the Riskpool is implemented. This is 
+This is a pretty standard GIF RiskPool contract.
 
 Address: [0x3D5cB3c62b17f3C37AdaDbf207A69018C65B6086](https://mumbai.polygonscan.com/address/0x3D5cB3c62b17f3C37AdaDbf207A69018C65B6086#code)
 
